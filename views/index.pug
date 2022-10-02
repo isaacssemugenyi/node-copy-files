@@ -1,0 +1,12 @@
+extends layout
+block content
+    form(method="POST" action="/")
+        .mb-3
+            label(for="sourceFolder").form-label Source Folder
+            input.form-control#sourceFolder(type="text" aria-describedby="sourceFolder" name="source") 
+        .mb-3
+            label(for="destinationFolder").form-label Destination Folder
+            input.form-control#destinationFolder(type="text" aria-describedby="destinationFolder" name="destination")
+        
+        .row.py-3.px-2
+            button.btn.btn-secondary(type="submit") Submit
